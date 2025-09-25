@@ -148,6 +148,10 @@ nav .fa {
     color: #fff;
     position: relative;
 }
+/*footer*/
+.footer {
+    background: #075056;
+}
 
 @media (max-width: 700px){
     .text-box {

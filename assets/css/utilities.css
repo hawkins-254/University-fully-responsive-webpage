@@ -40,13 +40,24 @@
   gap: 20px;
 }
 .card {
-  background-color: #f4d47c;
+  background-color: #fdf6e3;
   color: #333;
   border-radius: 10px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   padding: 20px;
   margin: 10px;
   position: relative;
+}
+.footer-card {
+  background-color: #fdf6e3;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 10px;
+}
+.address .social .fab {
+color: #fff;
 }
 .layer {
   background: transparent;
