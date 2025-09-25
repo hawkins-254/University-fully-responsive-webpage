@@ -1,36 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <link rel="stylesheet" href="/assets/css/utilities.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Magazine Cover</title>
+  <link rel="stylesheet" href="assets/css/stylesblog1.css" />
+  <link rel="stylesheet" href="assets/css/styles.css"/>
+  <link rel="stylesheet" href="assets/css/utilities.css"/>
 </head>
 <body>
-    <section class="header">
-        <nav>
-            <a href="index.html"><img src="/assets/imgs/logo.png" alt="logo"></a>
-            <div class="nav-links" id="navLinks">
-                <i class="fa fa-times fa-3x" onclick="hideMenu()"></i>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html">About Us</a></li>
-                    <li><a href="Blogs.html">Blogs</a></li>
-                    <li><a href="Contact Us.html">Contact Us</a></li>
-                </ul>
-            </div>
-            <a href="index.html" class="btn btn-primary">Join us</a>
-            <i class="fa fa-bars fa-3x" onclick="showMenu()"></i> 
-        </nav>
-        <div class="text-box">
-            <h1>Worlds Biggest University</h1>
-            <p class="md">Making websites is now one of the easiest thing in the Wolrd
-                you just need to need to learn<br/>CSS,Javascript and you are good to go
-            </p>
-            <a href="index.html" class="btn btn-primary">Read More</a>
-        </div>
+  <main class="magazine-cover">
+    <header class="title">Modern Style Magazine</header>
+
+    <section class="feature-article">
+      <h2>Bold Ideas for a Changing World</h2>
+      <p>Explore how technology, design, and culture converge to redefine our future. This is our feature highlight of the month.</p>
+    </section>
+
+    <section class="small-article1">
+      <h3>Style & Minimalism</h3>
+      <p>Why less is more in today’s visual culture.</p>
+    </section>
+
+    <section class="small-article2">
+      <h3>Urban Living Hacks</h3>
+      <p>Small-space solutions for the modern lifestyle.</p>
+    </section>
+
+    <section class="cover-image">
+      <img src="https://picsum.photos/400/500" alt="Cover" />
     </section>
     <section class="footer">
         <div class="footer-content grid-3 my-3 py-3">
@@ -47,8 +45,8 @@
             <div class="blogs">
                 <h3 class="p-1">courses</h3>
                 <ul>
-                    <li><a href="blog1.html">Full-stack web development</a></li>
-                    <li><a href="blog-2.html">Computer Science</a></li>
+                    <li><a href="#">Full-stack web development</a></li>
+                    <li><a href="#">Computer Science</a></li>
                     <li><a href="#">SEO </a></li>
                     <li><a href="#">Machine learning</a></li>
                     <li><a href="#">front-end frameworks(react & Vue)</a></li>
@@ -86,6 +84,6 @@
         </div>
     </section>
 <script src="main.js"></script>
-    
+  </main>
 </body>
 </html>

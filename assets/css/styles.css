@@ -151,6 +151,15 @@ nav .fa {
 /*footer*/
 .footer {
     background: #075056;
+
+}
+.footer .address {
+    margin-left: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.footer .footer-content {
+    margin-left: 2rem;
 }
 
 @media (max-width: 700px){
@@ -190,7 +199,8 @@ nav .fa {
     }
     .courses .grid-3,
     .campus .grid-3,
-    .facilities .grid-3 {
+    .facilities .grid-3,
+    .footer .grid-3 {
         grid-template-columns: 1fr;
         grid-template-rows: 1;
         margin: 0 auto;
