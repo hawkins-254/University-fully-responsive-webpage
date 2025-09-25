@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+:root {
+  --primary-color: #f44336;
+  --secondary-color: #1c3fa8;
+  --dark-color: #002240;
+  --light-color: #f4f4f4;
+  --success-color: #5cb85c;
+  --error-color: #d9534f;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #233038;
+}
+a {
+    text-decoration: none;
+}
+       /* Header && navbar. */
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.3), rgba(4,9,30,0.3)), url(/assets/imgs/banner.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+nav a img {
+    width: 150px;
+}
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    flex: 1;
+}
+.nav-links ul a {
+    margin: 0 15px;
+    color: #fff;
+}
+.nav-links ul li {
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    list-style: none;
+}
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+}
+.nav-links ul li:hover::after {
+    width: 100%;
+    transition: 0.5s;
+
+}
+nav .fa {
+    display: none
+}
+.text-box {
+    margin: 8rem auto;
+    text-align: center;
+    color: #fff;
+    font-family: 'lato' sans-serif;
+    line-height: 1.8;
+}
+.text-box h1 {
+    font-size: 62px;
+}
+.text-box a {
+    margin-top: 5rem;
+}
+.text-box p {
+    font-size: 1rem;
+}
+.courses-wrapper {
+     
+     overflow: visible;
+}
+.courses {
+    padding-top: 100px;
+    line-height: 1.8;
+    font-family: 'lato' sans-serif;
+    width: 100%;
+    margin: 0 auto;
+}
+.courses h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #fff;
+}
+.courses p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.courses .card p {
+    color: #333;
+}
+.campus {
+    color: #fff;
+    padding-top: 100px;
+    line-height: 2.5rem;
+}
+.campus .card img,
+.facilities .card img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+.layer h3 {
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s;
+    opacity: 0;
+    overflow: hidden;
+}
+.layer:hover h3 {
+    bottom: 49%;
+    opacity: 1;
+}
+.facilities {
+    color: #fff;
+    position: relative;
+}
+
+@media (max-width: 700px){
+    .text-box {
+        text-align: center;
+    }
+    .text-box h1 {
+        font-size: 40px;
+    }
+    .nav-links ul li {
+        display: block;
+    }
+    nav .btn {
+        display: none;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+    }
+    .nav-links {
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+
+    }
+    nav .fa {
+        display: block;
+        color: #fff;
+        cursor: pointer;
+        font-size: 22px;
+    }
+    .courses .grid-3,
+    .campus .grid-3,
+    .facilities .grid-3 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1;
+        margin: 0 auto;
+    }
+
+}
